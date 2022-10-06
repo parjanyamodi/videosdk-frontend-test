@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Cookies from "universal-cookie";
 import io from "socket.io-client";
+import baseurl from "../../baseurl";
 
 const Dashboard = () => {
-  const socket = io.connect("http://localhost:3001/");
+  const socket = io.connect(baseurl);
 
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
   const [isConnected, setIsConnected] = useState(socket.connected);

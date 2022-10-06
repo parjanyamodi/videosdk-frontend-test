@@ -1,2 +1,2 @@
-const baseurl = "http://localhost:3001";
+const baseurl = "https://pm-task.videosdk.live/api";
 export default baseurl;

@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import baseurl from "../../baseurl";
 
 const Dashboard = () => {
-  const socket = io.connect(baseurl);
+  const socket = io.connect("https://pm-task.videosdk.live/");
 
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
   const [isConnected, setIsConnected] = useState(socket.connected);
